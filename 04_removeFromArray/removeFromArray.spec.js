@@ -1,4 +1,5 @@
 const removeFromArray = require('./removeFromArray')
+const removeFromArray2 = require('./removeFromArray2')
 
 function generateRandomArray(length, min, max) {
   const array = [];

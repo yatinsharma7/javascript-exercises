@@ -1,11 +1,18 @@
+// const removeFromArray = function(arr,...items) {
+//     for(let item of items){
+//         arr = arr.filter(element=>element !==item);
+
+//     }
+//     return arr;
+// };
+
+
+
 const removeFromArray = function(arr,...items) {
-    for(let item of items){
-        arr = arr.filter(element=>element !==item);
-
-    }
-    return arr;
-};
-
+    items.forEach((item) => {arr = arr.filter(element=> element !==item)})
+    return arr; 
+    
+}
 // const removeFromArray = function(array,...items){
 //     const newArray = [];
 //     array.forEach(element => {
@@ -22,3 +29,4 @@ const removeFromArray = function(arr,...items) {
 
 // Do not edit below this line
 module.exports = removeFromArray;
+// module.exports = removeFromArray2;
